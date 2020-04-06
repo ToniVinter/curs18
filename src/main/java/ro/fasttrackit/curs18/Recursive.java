@@ -2,6 +2,7 @@ package ro.fasttrackit.curs18;
 
 public class Recursive {
     public int length(String word){
-        return 0;
+        if(word == null) throw new IllegalArgumentException("word cannot be null");
+            return 0;
     }
 }

@@ -14,6 +14,6 @@ public class Recursiv {
     @Test
     @DisplayName("WHEN null is received THEN throw exception")
     void ifNullThenException(){
-        Assertions.assertThrows(IllegalArgumentException.class, ()-> recursiv.length(null));
+        Assertions.assertThrows(IllegalArgumentException.class, ()-> recursiv.length("test"));
     }
 }
