@@ -11,4 +11,12 @@ public class Recursive {
 
 
     }
+
+    public String findUpperCase(String word) {
+        if(Character.isUpperCase(word.charAt(0))){
+            return word.substring(0,1);
+        }else{
+            return findUpperCase(word.substring(1));
+        }
+    }
 }

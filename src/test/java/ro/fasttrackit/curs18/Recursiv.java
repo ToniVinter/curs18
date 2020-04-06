@@ -28,4 +28,12 @@ public class Recursiv {
     void Recursive(){
         org.assertj.core.api.Assertions.assertThat(recursiv.length("machine")).isEqualTo(7);
     }
+
+    @Test
+    @DisplayName("")
+    void findUpperCase(){
+        org.assertj.core.api.Assertions.assertThat(recursiv.findUpperCase("mAchine")).isEqualTo("A");
+    }
+
+
 }
