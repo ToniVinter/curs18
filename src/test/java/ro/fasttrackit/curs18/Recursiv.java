@@ -16,4 +16,10 @@ public class Recursiv {
     void ifNullThenException(){
         Assertions.assertThrows(IllegalArgumentException.class, ()-> recursiv.length(null));
     }
+
+    @Test
+    @DisplayName("WHEN word is empty THEN return 0")
+    void ifIsEmpty(){
+        org.assertj.core.api.Assertions.assertThat(recursiv.length("")).isEqualTo(1);
+    }
 }
