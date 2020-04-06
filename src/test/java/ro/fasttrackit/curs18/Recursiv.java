@@ -22,4 +22,10 @@ public class Recursiv {
     void ifIsEmpty(){
         org.assertj.core.api.Assertions.assertThat(recursiv.length("")).isEqualTo(0);
     }
+
+    @Test
+    @DisplayName("When word is machine return 7")
+    void Recursive(){
+        org.assertj.core.api.Assertions.assertThat(recursiv.length("machine")).isEqualTo(6);
+    }
 }
