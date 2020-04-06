@@ -26,6 +26,6 @@ public class Recursiv {
     @Test
     @DisplayName("When word is machine return 7")
     void Recursive(){
-        org.assertj.core.api.Assertions.assertThat(recursiv.length("machine")).isEqualTo(6);
+        org.assertj.core.api.Assertions.assertThat(recursiv.length("machine")).isEqualTo(7);
     }
 }
